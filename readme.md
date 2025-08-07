@@ -31,4 +31,48 @@ The project consists of three main tables:
 - **Frontend:** HTML, CSS, JavaScript, BootStrap
 
 
+## 📥 How to Download and Run Locally
 
+### ✅ Prerequisites
+- XAMPP or WAMP installed on your machine
+- PHP 7+ and MySQL
+
+---
+
+### 🧾 Steps
+
+#### 1. **Clone the Repository**
+```bash
+git clone https://github.com/SurbhiSinghania13/JobAgency.git
+```
+#### 2. **Move the Project Folder**
+ - For XAMPP: Move the folder into htdocs/
+
+ - For WAMP: Move the folder into www/
+
+#### 3. **Start Apache and MySQL**
+ - Open the XAMPP/WAMP Control Panel
+
+ - Start Apache and MySQL services
+
+#### 4. **Import the Database**
+ - Open phpMyAdmin
+
+ - Create a new database named:
+ymagency
+ - Click Import and select the provided SQL file (jobboard.sql) from the project directory
+
+ ### 🔐 Environment Configuration
+
+A `.env` file is already included in the project.  
+Please **open the `.env` file** and **add your local database details** as shown below:
+
+```env
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=
+DB_NAME=ymagency
+```
+
+ #### 5. **Access the Project in Browser**
+http://localhost/JobAgency/
